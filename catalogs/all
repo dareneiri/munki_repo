@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>display_name</key>
+		<string>Munkireport Install and config</string>
+		<key>installer_type</key>
+		<string>nopkg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>path</key>
+				<string>/usr/local/munki/munkireport-2.3.0</string>
+				<key>type</key>
+				<string>file</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.4.0</string>
+		<key>name</key>
+		<string>munkireport</string>
+		<key>preinstall_script</key>
+		<string>#!/bin/bash 
+/bin/bash -c "$(curl -s --max-time 10 https://darenemac.wri.wolfram.com/munkireport-php/index.php?/install)"</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>uninstall_script</string>
+		<key>uninstall_script</key>
+		<string>#!/bin/sh
+rm -rf /usr/local/munki/preflight \
+  /usr/local/munki/preflight.d \
+  /usr/local/munki/postflight \
+  /usr/local/munki/postflight.d \
+  /usr/local/munki/report_broken_client \
+  /usr/local/munki/munkilib/reportcommon.py \
+  /usr/local/munki/munkireport-* \
+  /Library/Preferences/MunkiReport.plist
+exit 0</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>2.3.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Adium is a free instant messaging application for Mac OS X that can connect to AIM, MSN, Jabber, Yahoo, and more.</string>
+		<key>display_name</key>
+		<string>Adium</string>
+		<key>icon_hash</key>
+		<string>54ee3db8e62925523e7c1a7528fcc6127c04ef13e0c9ac69c32cd22abce1fdca</string>
+		<key>icon_name</key>
+		<string>Adium.icns</string>
+		<key>installer_item_hash</key>
+		<string>bca3ac81d33265b71c95a3984be80715fbd98f38d7c463d0441d43a335ed399a</string>
+		<key>installer_item_location</key>
+		<string>apps/Adium-1.5.10.dmg</string>
+		<key>installer_item_size</key>
+		<integer>24019</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.adiumX.adiumX</string>
+				<key>CFBundleName</key>
+				<string>Adium</string>
+				<key>CFBundleShortVersionString</key>
+				<string>1.5.10</string>
+				<key>CFBundleVersion</key>
+				<string>1.5.10</string>
+				<key>minosversion</key>
+				<string>10.6.8</string>
+				<key>path</key>
+				<string>/Applications/Adium.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Adium.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.6.8</string>
+		<key>name</key>
+		<string>Adium</string>
+		<key>unattended_install</key>
+		<false/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.5.10</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Minecraft with LaunchAgent to install into user's home directories.</string>
+		<key>display_name</key>
+		<string>Minecraft</string>
+		<key>installed_size</key>
+		<integer>11400</integer>
+		<key>installer_item_hash</key>
+		<string>c7a0956db7e7a441aae771b6e3547d218ff35df75d369c6db5c630b0a5a20d91</string>
+		<key>installer_item_location</key>
+		<string>apps/Minecraft-1.0.1.pkg</string>
+		<key>installer_item_size</key>
+		<integer>3376</integer>
+		<key>minimum_os_version</key>
+		<string>10.7.0</string>
+		<key>name</key>
+		<string>Minecraft</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>11400</integer>
+				<key>packageid</key>
+				<string>org.sacredsf.pkg.minecraft</string>
+				<key>version</key>
+				<string>1.0.1</string>
+			</dict>
+		</array>
+		<key>requires</key>
+		<array>
+			<string>Java6_Apple</string>
+		</array>
+		<key>unattended_install</key>
+		<false/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>1.0.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere. This means that any file you save to your Dropbox will automatically save to all your computers, phones and even the Dropbox website.</string>
+		<key>display_name</key>
+		<string>Dropbox</string>
+		<key>icon_hash</key>
+		<string>9548b96ebf2613a21621e24a9805be64fa6e7cd618654fc004cda2fc39caaf2f</string>
+		<key>installer_item_hash</key>
+		<string>089a2b9ce3c17c9ffba125403bd870dc3fea8bb12a32d76f8c36e26749bf0481</string>
+		<key>installer_item_location</key>
+		<string>apps/Dropbox/Dropbox-3.4.1.dmg</string>
+		<key>installer_item_size</key>
+		<integer>36476</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.getdropbox.dropbox</string>
+				<key>CFBundleName</key>
+				<string>Dropbox</string>
+				<key>path</key>
+				<string>/Applications/Dropbox.app</string>
+				<key>type</key>
+				<string>file</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Dropbox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.6.0</string>
+		<key>name</key>
+		<string>Dropbox</string>
+		<key>postinstall_script</key>
+		<string>#!/bin/sh
+# based on Ruby postinstall script by Riley Shott:
+# https://groups.google.com/group/munki-dev/browse_thread/thread/a2813e7f62535f13/63d127534541f863
+# modifications:
+# - always extract the helper tool with each install instead of skipping if it exists
+# - remove xattr com.apple.quarantine removal, as Munki will have already done this upon 
+#   installation; normal autopkg runs also won't quarantine the download to begin with
+
+HELPER_SRC_PATH=/Applications/Dropbox.app/Contents/Resources/DropboxHelperInstaller.tgz
+HELPER_DST_DIR=/Library/DropboxHelperTools
+HELPER_DST_PATH="$HELPER_DST_DIR/DropboxHelperInstaller"
+
+if [ -e "$HELPER_SRC_PATH" ]; then
+  [ -d "$HELPER_DST_DIR" ] || mkdir "$HELPER_DST_DIR"
+  /usr/bin/tar -C "$HELPER_DST_DIR" -xz -f "$HELPER_SRC_PATH"
+  /bin/chmod 04511 "$HELPER_DST_PATH"
+  /usr/sbin/chown root:wheel "$HELPER_DST_PATH"
+else
+  echo "Expected $HELPER_SRC_PATH, but it was not present in the Dropbox dmg."
+  exit 1
+fi
+</string>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>3.4.1</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>description</key>
+		<string>Mozilla Firefox is a free and open source web browser.</string>
+		<key>display_name</key>
+		<string>Mozilla Firefox</string>
+		<key>icon_hash</key>
+		<string>3b466245b878b23c3d0c91dd0bb43979fd0b31f4805c2f232a50ccb6d3c958b5</string>
+		<key>installer_item_hash</key>
+		<string>ef919ab70c6432f754cf6367517a9fcc4ddb02336f197c74a9cb216c25c242fc</string>
+		<key>installer_item_location</key>
+		<string>apps/firefox/Firefox-37.0.dmg</string>
+		<key>installer_item_size</key>
+		<integer>73089</integer>
+		<key>installer_type</key>
+		<string>copy_from_dmg</string>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>org.mozilla.firefox</string>
+				<key>CFBundleName</key>
+				<string>Firefox</string>
+				<key>CFBundleShortVersionString</key>
+				<string>37.0</string>
+				<key>CFBundleVersion</key>
+				<string>3715.3.26</string>
+				<key>minosversion</key>
+				<string>10.6</string>
+				<key>path</key>
+				<string>/Applications/Firefox.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>items_to_copy</key>
+		<array>
+			<dict>
+				<key>destination_path</key>
+				<string>/Applications</string>
+				<key>source_item</key>
+				<string>Firefox.app</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.6</string>
+		<key>name</key>
+		<string>Firefox</string>
+		<key>unattended_install</key>
+		<true/>
+		<key>uninstall_method</key>
+		<string>remove_copied_items</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>37.0</string>
+	</dict>
+	<dict>
+		<key>autoremove</key>
+		<false/>
+		<key>blocking_applications</key>
+		<array>
+			<string>MicrosoftRemoteDesktop</string>
+		</array>
+		<key>catalogs</key>
+		<array>
+			<string>testing</string>
+		</array>
+		<key>category</key>
+		<string>Utilities</string>
+		<key>description</key>
+		<string></string>
+		<key>developer</key>
+		<string>Microsoft</string>
+		<key>display_name</key>
+		<string>Microsoft Remote Desktop</string>
+		<key>icon_hash</key>
+		<string>7b453d5a96779420d583b15001c97d1a85f2d7c15adf564cc789b01a713d0f0d</string>
+		<key>icon_name</key>
+		<string>MicrosoftRD.png</string>
+		<key>installed_size</key>
+		<integer>36849</integer>
+		<key>installer_item_hash</key>
+		<string>c30ac2720ca3db6fb25b3df8d66edb4c2413751f82b2c425d5a8807da33c0591</string>
+		<key>installer_item_location</key>
+		<string>apps/Microsoft/RemoteDesktop/MicrosoftRemoteDesktop-8.0.25886.pkg</string>
+		<key>installer_item_size</key>
+		<integer>13848</integer>
+		<key>installs</key>
+		<array>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.microsoft.rdc.mac</string>
+				<key>CFBundleName</key>
+				<string>Microsoft Remote Desktop</string>
+				<key>CFBundleShortVersionString</key>
+				<string>8.0.25886</string>
+				<key>CFBundleVersion</key>
+				<string>8.0.25886</string>
+				<key>minosversion</key>
+				<string>10.7</string>
+				<key>path</key>
+				<string>/Applications/Microsoft Remote Desktop.app</string>
+				<key>type</key>
+				<string>application</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+		</array>
+		<key>minimum_os_version</key>
+		<string>10.5.0</string>
+		<key>name</key>
+		<string>MicrosoftRemoteDesktop</string>
+		<key>receipts</key>
+		<array>
+			<dict>
+				<key>installed_size</key>
+				<integer>36849</integer>
+				<key>packageid</key>
+				<string>com.microsoft.rdc.mac</string>
+				<key>version</key>
+				<string>8.0.25886</string>
+			</dict>
+		</array>
+		<key>unattended_install</key>
+		<false/>
+		<key>uninstall_method</key>
+		<string>removepackages</string>
+		<key>uninstallable</key>
+		<true/>
+		<key>version</key>
+		<string>8.0.25886</string>
+	</dict>
+</array>
+</plist>

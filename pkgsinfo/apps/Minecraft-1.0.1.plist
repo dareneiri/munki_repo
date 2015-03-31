@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>darene</string>
+		<key>creation_date</key>
+		<date>2015-03-31T15:38:01Z</date>
+		<key>munki_version</key>
+		<string>2.2.4.2431</string>
+		<key>os_version</key>
+		<string>10.10.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>description</key>
+	<string>Minecraft with LaunchAgent to install into user's home directories.</string>
+	<key>display_name</key>
+	<string>Minecraft</string>
+	<key>installed_size</key>
+	<integer>11400</integer>
+	<key>installer_item_hash</key>
+	<string>c7a0956db7e7a441aae771b6e3547d218ff35df75d369c6db5c630b0a5a20d91</string>
+	<key>installer_item_location</key>
+	<string>apps/Minecraft-1.0.1.pkg</string>
+	<key>installer_item_size</key>
+	<integer>3376</integer>
+	<key>minimum_os_version</key>
+	<string>10.7.0</string>
+	<key>name</key>
+	<string>Minecraft</string>
+	<key>receipts</key>
+	<array>
+		<dict>
+			<key>installed_size</key>
+			<integer>11400</integer>
+			<key>packageid</key>
+			<string>org.sacredsf.pkg.minecraft</string>
+			<key>version</key>
+			<string>1.0.1</string>
+		</dict>
+	</array>
+	<key>requires</key>
+	<array>
+		<string>Java6_Apple</string>
+	</array>
+	<key>unattended_install</key>
+	<false/>
+	<key>uninstall_method</key>
+	<string>removepackages</string>
+	<key>uninstallable</key>
+	<true/>
+	<key>version</key>
+	<string>1.0.1</string>
+</dict>
+</plist>
