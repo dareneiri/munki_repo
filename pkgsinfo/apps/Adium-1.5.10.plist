@@ -19,8 +19,12 @@
 	<array>
 		<string>testing</string>
 	</array>
+	<key>category</key>
+	<string>Internet</string>
 	<key>description</key>
 	<string>Adium is a free instant messaging application for Mac OS X that can connect to AIM, MSN, Jabber, Yahoo, and more.</string>
+	<key>developer</key>
+	<string>Adium</string>
 	<key>display_name</key>
 	<string>Adium</string>
 	<key>icon_name</key>
