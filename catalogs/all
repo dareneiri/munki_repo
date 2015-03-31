@@ -180,11 +180,11 @@ exit 0</string>
 		<key>icon_hash</key>
 		<string>9548b96ebf2613a21621e24a9805be64fa6e7cd618654fc004cda2fc39caaf2f</string>
 		<key>installer_item_hash</key>
-		<string>089a2b9ce3c17c9ffba125403bd870dc3fea8bb12a32d76f8c36e26749bf0481</string>
+		<string>1e11ece67393d26b862a085e50315170eae352588bc9a1bdfe062d9488887f2c</string>
 		<key>installer_item_location</key>
-		<string>apps/Dropbox/Dropbox-3.4.1.dmg</string>
+		<string>apps/Dropbox/Dropbox-3.2.9.dmg</string>
 		<key>installer_item_size</key>
-		<integer>36476</integer>
+		<integer>47992</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -210,7 +210,7 @@ exit 0</string>
 			</dict>
 		</array>
 		<key>minimum_os_version</key>
-		<string>10.6.0</string>
+		<string>10.4.0</string>
 		<key>name</key>
 		<string>Dropbox</string>
 		<key>postinstall_script</key>
@@ -241,7 +241,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>3.4.1</string>
+		<string>3.2.9</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
