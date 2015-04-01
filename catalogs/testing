@@ -173,18 +173,24 @@ exit 0</string>
 		<array>
 			<string>testing</string>
 		</array>
+		<key>category</key>
+		<string>Internet</string>
 		<key>description</key>
 		<string>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere. This means that any file you save to your Dropbox will automatically save to all your computers, phones and even the Dropbox website.</string>
+		<key>developer</key>
+		<string>Dropbox</string>
 		<key>display_name</key>
 		<string>Dropbox</string>
 		<key>icon_hash</key>
 		<string>9548b96ebf2613a21621e24a9805be64fa6e7cd618654fc004cda2fc39caaf2f</string>
+		<key>icon_name</key>
+		<string>Dropbox.png</string>
 		<key>installer_item_hash</key>
-		<string>1e11ece67393d26b862a085e50315170eae352588bc9a1bdfe062d9488887f2c</string>
+		<string>089a2b9ce3c17c9ffba125403bd870dc3fea8bb12a32d76f8c36e26749bf0481</string>
 		<key>installer_item_location</key>
-		<string>apps/Dropbox/Dropbox-3.2.9.dmg</string>
+		<string>apps/Dropbox/Dropbox-3.4.1.dmg</string>
 		<key>installer_item_size</key>
-		<integer>47992</integer>
+		<integer>36476</integer>
 		<key>installer_type</key>
 		<string>copy_from_dmg</string>
 		<key>installs</key>
@@ -210,7 +216,7 @@ exit 0</string>
 			</dict>
 		</array>
 		<key>minimum_os_version</key>
-		<string>10.4.0</string>
+		<string>10.6.0</string>
 		<key>name</key>
 		<string>Dropbox</string>
 		<key>postinstall_script</key>
@@ -241,7 +247,7 @@ fi
 		<key>uninstallable</key>
 		<true/>
 		<key>version</key>
-		<string>3.2.9</string>
+		<string>3.4.1</string>
 	</dict>
 	<dict>
 		<key>autoremove</key>
